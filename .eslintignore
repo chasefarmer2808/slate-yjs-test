@@ -1,0 +1,6 @@
+*.md
+*.css
+*.svg
+node_modules/
+.eslintrc.js
+.history/
