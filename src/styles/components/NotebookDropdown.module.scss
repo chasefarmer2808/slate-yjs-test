@@ -1,0 +1,20 @@
+@import 'styles/variables/colors';
+
+.root {
+  & ul {
+    padding: 0;
+  }
+
+  & li {
+    padding: 4px;
+  }
+
+  & li:hover {
+    background-color: $background-color-inverse;
+    color: $font-inverse-color;
+  }
+}
+
+.add-notebook-button {
+  background-color: $accent-color;
+}

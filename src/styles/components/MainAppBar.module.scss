@@ -1,0 +1,15 @@
+@import 'styles/variables/colors', 'styles/variables/heights';
+
+.root {
+  background-color: $main-appbar-color;
+}
+
+.settings {
+  color: $font-inverse-color;
+  width: 200px;
+}
+
+.logo {
+  padding: 5px 0;
+  margin-left: 15px;
+}

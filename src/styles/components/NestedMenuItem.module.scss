@@ -1,0 +1,7 @@
+@import 'styles/variables/colors';
+
+.root {
+  & svg {
+    fill: $font-color;
+  }
+}

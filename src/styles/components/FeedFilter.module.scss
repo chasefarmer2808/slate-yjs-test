@@ -1,0 +1,30 @@
+@import 'styles/variables/colors';
+
+.filter-toggle {
+  height: 100%;
+  width: 3rem;
+  padding-top: 10px;
+  background-color: $accent-color;
+
+  svg {
+    fill: $icon-color;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.filter {
+  flex: 1 0 auto;
+  height: 100%;
+  background-color: $background-color;
+  overflow: hidden;
+  transition: width 0.3s;
+
+  &--open {
+    width: 30rem;
+  }
+
+  &--closed {
+    width: 0;
+  }
+}

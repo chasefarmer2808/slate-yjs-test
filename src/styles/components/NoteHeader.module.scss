@@ -1,0 +1,14 @@
+@import 'styles/variables/colors';
+
+.root {
+  display: flex;
+  border-bottom: 1px solid $background-color-primary;
+  border-right: 2px solid lightgray;
+}
+
+.classification-picker-container {
+  width: 200px;
+  padding-left: 4px;
+  border-right: 1px solid $background-color-primary;
+  background-color: #e3eaf2;
+}

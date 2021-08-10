@@ -1,0 +1,34 @@
+@import 'styles/variables/colors';
+
+.root {
+  position: relative;
+  display: flex;
+}
+
+.status-circle {
+  display: inline-block;
+  margin-right: 3px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.avatar {
+  @apply inline-block relative h-10 w-10 rounded-full ring-2 ring-white text-white text-center;
+}
+
+.overflow-avatar {
+  @apply inline-block h-10 w-10 rounded-full ring-2 ring-white bg-gray-400 text-white text-center;
+  z-index: 4;
+}
+
+.client-list {
+  @apply absolute shadow-xl bg-white;
+  top: 100%;
+  left: 80%;
+  width: 140px;
+  padding: 4px;
+  z-index: 3;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}

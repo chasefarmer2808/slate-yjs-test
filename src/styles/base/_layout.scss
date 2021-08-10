@@ -1,0 +1,29 @@
+.floating-dropdown {
+  position: absolute;
+  z-index: 2;
+  background-color: $background-color;
+}
+
+.flyout-list {
+  visibility: hidden;
+  position: absolute;
+  left: 100%;
+  z-index: 3;
+  width: 100%;
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.flyout-list button {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
+
+li:hover {
+  & .flyout-list {
+    visibility: visible;
+  }
+}

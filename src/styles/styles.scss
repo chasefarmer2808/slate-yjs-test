@@ -1,0 +1,24 @@
+
+//Global stylesheet where we will import all other stylesheets
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Variables
+@import 'styles/variables/variables';
+
+//Fonts
+@import 'styles/fonts/fonts';
+
+//Base
+@import 'styles/base/base';
+
+//Icons
+@import 'styles/base/icons';
+
+//Inputs
+@import 'styles/base/input';
+
+//Layout
+@import 'styles/base/layout';

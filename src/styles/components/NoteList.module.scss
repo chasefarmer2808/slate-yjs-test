@@ -1,0 +1,15 @@
+@import 'styles/variables/heights';
+@import 'styles/variables/colors';
+
+.controls {
+  height: $note-controls-height;
+  width: 100%;
+  background-color: $accent-color;
+}
+
+.note-list {
+  overflow-y: auto;
+  height: calc(100% - #{$note-controls-height});
+  padding: 0;
+  margin: 0;
+}

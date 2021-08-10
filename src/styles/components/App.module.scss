@@ -1,0 +1,16 @@
+@import 'styles/variables/heights';
+
+.app-grid {
+  display: grid;
+  grid-template-rows:
+    $classificationbar-height
+    $appbar-height
+    $searchbar-height
+    auto
+    $classificationbar-height;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}

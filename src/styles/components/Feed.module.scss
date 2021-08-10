@@ -1,0 +1,20 @@
+@import 'styles/variables/heights';
+
+.root {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+}
+
+.feed-wrapper {
+  display: grid;
+  grid-template-rows: $feedactionbar-height 1fr;
+}
+
+.feed-main {
+  overflow-y: auto;
+  //Height must be set for the overflow to work
+  height: calc(
+    100vh - #{$classificationbar-height} - #{$appbar-height} - #{$searchbar-height} -
+      #{$classificationbar-height} - #{$feedactionbar-height}
+  );
+}

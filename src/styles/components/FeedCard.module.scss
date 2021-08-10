@@ -1,0 +1,31 @@
+@import 'styles/variables/colors', 'styles/utils/mixins';
+
+.root {
+  border-bottom: solid 1px $border-color;
+  padding: 1.5rem;
+}
+
+.feed-card {
+  grid-template-columns: 3rem 5rem 1fr 3rem;
+
+  svg {
+    fill: $icon-color;
+  }
+
+  &-details {
+    grid-template-rows: 2rem 3.5rem 1fr;
+
+    .feed-card-type {
+      font-size: x-small;
+    }
+
+    .feed-card-title,
+    .feed-card-content {
+      font-family: 'Source-Sans-Pro';
+    }
+
+    .feed-card-content {
+      @include ellipsis-trim(3);
+    }
+  }
+}

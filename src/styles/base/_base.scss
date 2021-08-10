@@ -1,0 +1,68 @@
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-family;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; //in our SPA we don't want the page to scroll, inner areas will handle scrolling
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+// TODO: remove after the note list and other stuff is changed to new components
+// styled components don't seem able to take SASS variables as input.
+:root {
+  --bg-color: white;
+  --bg-color-primary: #4572a6;
+  --bg-color-secondary: #fdbb53;
+  --bg-color-header: #231f20;
+  --bg-color-subheader: #414042;
+  --bg-color-filter: #e6e7e8;
+}

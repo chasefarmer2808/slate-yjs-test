@@ -1,0 +1,33 @@
+@import 'styles/variables/heights';
+
+.editor-container {
+  background: white;
+  border-top: 1px solid grey;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.editable {
+  padding: 8px;
+  height: calc(100vh - #{$editor-height});
+  overflow: auto;
+}
+
+ul, ol {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul, ol {
+  &[dir=auto] {
+    padding-left: 40px;
+  }
+
+  &[dir=rtl] {
+    padding-right: 40px;
+  }
+}

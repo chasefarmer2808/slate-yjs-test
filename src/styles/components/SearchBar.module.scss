@@ -1,0 +1,29 @@
+@import 'styles/variables/colors', 'styles/variables/heights';
+
+.root {
+  background-color: $search-bar-color;
+}
+
+.search-input {
+  height: 30px;
+  background-color: white;
+}
+
+.search-type {
+  width: 200px;
+  height: 30px;
+  background-color: $background-color;
+}
+
+.search-input,
+.search-type {
+  margin: 10px 0;
+}
+
+.search-button {
+  margin-left: 10px;
+
+  &:hover svg {
+    fill: $accent-color;
+  }
+}

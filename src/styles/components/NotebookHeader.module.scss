@@ -1,0 +1,9 @@
+@import 'styles/variables/colors';
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 2px solid lightgray;
+  border-bottom: 2px solid $background-color-primary;
+}

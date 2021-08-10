@@ -1,0 +1,11 @@
+@import 'styles/variables/colors', 'styles/variables/heights';
+
+.root {
+  background-color: $classification-bar-color;
+  color: $font-inverse-color;
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+}
